@@ -18,3 +18,10 @@ const addItems = galleryItems.map(
 ).join('');
 
 gallery.insertAdjacentHTML('afterbegin', addItems);
+
+let lightbox = new SimpleLightbox('.gallery li a', {
+    captionsData: 'alt',
+    captionPosition: 'bottom',
+    captionDelay: 350,
+    scrollZoom: false,
+});
